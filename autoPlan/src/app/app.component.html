@@ -1,80 +1,190 @@
 <header>
-    <div class="container my-3">
-        <img src="src/assets/img/true.jpg">
-    </div>
+  <div class="container my-3"><img src="src/assets/img/true.jpg" /></div>
 </header>
 <div class="container border-top border-bottom">
-    <nav class="nav nav-pills nav-fill">
-        <a class="nav-item nav-link">PLANES</a>
-        <a class="nav-item nav-link" routerLink="/nosotros">NOSOTROS</a>
-        <a class="nav-item nav-link" routerLink="/preguntasFrecuentes">PREGUNTAS FRECUENTES</a>
-        <a class="nav-item nav-link" routerLink="/consultas">CONSULTAS</a>
-        <a class="nav-item nav-link" href="" data-toggle="modal" data-target="#cupon">CUPON DE PAGO</a>
-    </nav>
+  <nav class="nav nav-pills nav-fill peugeot">
+    <a
+      class="nav-item nav-link color-p"
+      data-toggle="dropdown"
+      href="#"
+      role="button"
+      aria-haspopup="true"
+      aria-expanded="false"
+      >PLANES</a
+    >
+    <ul class="dropdown-menu mt-2 shadow">
+      <div class="container">
+        <div class="row">
+          <li routerLink="/plan/2061" class="col-md-4 text-center planes">
+            <img
+              class="img-fluid"
+              src="../assets/img/dropdown/208.jpg"
+              alt="Peugeot 208"
+            />
+            <h5>208</h5>
+            <a href="">PEA 5 Y 15</a> <a href="">SUPER PLAN</a>
+          </li>
+          <li routerLink="/plan/2063" class="col-md-4 text-center planes">
+            <img
+              class="img-fluid"
+              src="../assets/img/dropdown/2008.jpg"
+              alt="Peugeot 208"
+            />
+            <h5>208</h5>
+            <a href="">PLAN 70/30</a>
+          </li>
+          <li routerLink="/plan/2064" class="col-md-4 text-center planes">
+            <img
+              class="img-fluid"
+              src="../assets/img/dropdown/partner.jpg"
+              alt="Peugeot 208"
+            />
+            <h5>PARTNER</h5>
+            <a href="">PLAN 70/30</a>
+          </li>
+        </div>
+      </div>
+    </ul>
+    <a class="nav-item nav-link color-p" routerLink="/nosotros">NOSOTROS</a>
+    <a class="nav-item nav-link  color-p" routerLink="/preguntasFrecuentes"
+      >PREGUNTAS FRECUENTES</a
+    >
+    <a class="nav-item nav-link color-p" routerLink="/consultas">CONSULTAS</a>
+    <a
+      class="nav-item nav-link color-p"
+      href=""
+      data-toggle="modal"
+      data-target="#cupon"
+      >CUPON DE PAGO</a
+    >
+  </nav>
 </div>
 <!-- ROUTER OUTLET -->
 <router-outlet></router-outlet>
 <!-- ./ROUTER OUTLET -->
 <section>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <img class="img-fluid" src="src/assets/img/banner/true_1.jpg" alt="">
-            </div>
-            <div class="col-md-4">
-                <img class="img-fluid" src="src/assets/img/banner/true_2.jpg" alt="">
-            </div>
-            <div class="col-md-4">
-                <img class="img-fluid" src="src/assets/img/banner/true_3.jpg" alt="">
-            </div>
-        </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 mt-5">
+        <img class="img-fluid" src="src/assets/img/banner/true_1.jpg" alt="" />
+      </div>
+      <div class="col-md-4 mt-5">
+        <img class="img-fluid" src="src/assets/img/banner/true_2.jpg" alt="" />
+      </div>
+      <div class="col-md-4 mt-5">
+        <img class="img-fluid" src="src/assets/img/banner/true_3.jpg" alt="" />
+      </div>
     </div>
+  </div>
 </section>
-<hr>
+<hr class="my-4" />
 <footer>
-    <div class="container">
-        <a href="#" class="btn btn-primary justify-content-start">MI CUENTA ></a>
-        <ul class="nav justify-content-end small">
-            <li class="nav-item"><a class="nav-link text-muted" href="#"> ÚLTIMA ACTUALIZACIÓN: 21/11/18</a></li>
-            <li class="nav-item"><a class="nav-link text-muted" href="#"> DEFENSA DEL CONSUMIDOR</a></li>
-            <li class="nav-item"><a class="nav-link text-muted" href="#"> LEGALES</a></li>
-            <li class="nav-item"><a class="nav-link text-muted" href="#"> LUGARES DE PAGO</a></li>
-            <li class="nav-item"><a class="nav-link text-muted" href="#"> POLITICA DE PRIVACIDAD</a></li>
-            <li class="nav-item"><a class="nav-link text-muted" href="#"> PROTECCION DE DATOS</a></li>
-        </ul>
-    </div>
+  <div class="container">
+    <a
+      href="#"
+      class="btn btn-primary btn-lg justify-content-start bg-p border-0 rounded-0 peugeot tex"
+      ><small>MI CUENTA ></small></a
+    >
+    <ul class="nav justify-content-end small botonera-pie">
+      <li class="nav-item">
+        <a class="nav-link text-muted" href="#">
+          ÚLTIMA ACTUALIZACIÓN: 21/11/18</a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-muted" href="#"> DEFENSA DEL CONSUMIDOR</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-muted" href="#"> LEGALES</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-muted" href="#"> LUGARES DE PAGO</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-muted" href="#"> POLITICA DE PRIVACIDAD</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-muted" href="#"> PROTECCION DE DATOS</a>
+      </li>
+    </ul>
+  </div>
 </footer>
 
 <!-- MODAL -->
-<div class="modal fade" id="cupon" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header border-0 text-center">
-                <h5 class="modal-title" id="exampleModalLabel">CUPON DE PAGO</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+<div
+  class="modal fade"
+  id="cupon"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog" role="document">
+    <div class="modal-content shadow">
+      <div class="modal-header border-0">
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-center mt-n1">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-8 text-center">
+              <h5>CUPON DE PAGO</h5>
+              <p>Imprime tu cupon de pago</p>
             </div>
-            <div class="modal-body text-center">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class=" d-flex justify-content-center">
-                                <form>
-                                    <div class="form-group">
-                                        <input type="email" class="form-control" id="exampleFormControlInput1"
-                                            placeholder="Grupo">
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="email" class="form-control" id="exampleFormControlInput1"
-                                            placeholder="Orden">
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-md-6 ">
+              <div class=" d-flex justify-content-center">
+                <form>
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      class="p-2"
+                      id="exampleFormControlInput1"
+                      placeholder="Grupo"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      class="p-2"
+                      id="exampleFormControlInput1"
+                      placeholder="Orden"
+                    />
+                  </div>
+                </form>
+              </div>
             </div>
+          </div>
+          <div class="row justify-content-center mt-2">
+            <div class="col-md-8 ">
+              <button
+                type="button"
+                class="btn btn-secondary btn-lg btn-block p-16"
+              >
+                IMPRIMIR LA CUOTA DEL MES >
+              </button>
+            </div>
+          </div>
+          <div class="row justify-content-center mt-3">
+            <div class="col-md-10 ">
+              <button
+                type="button"
+                class="btn btn-outline-primary btn-lg btn-block p-16"
+              >
+                IMPRIMIR LA CUOTA DEL MES ANTERIOR >
+              </button>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 </div>

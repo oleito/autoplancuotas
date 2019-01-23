@@ -1,0 +1,21 @@
+.bg-consultas {
+    background-color: #007EDB;
+}
+h1, p, label{
+    font-family: Peugeot, Helvetica, sans-serif !important;
+}
+label {
+    text-transform: uppercase;
+}
+.terminos {
+    color: #2d2d2d;
+}
+.terminos p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 13px;
+    line-height: 24px;
+}
